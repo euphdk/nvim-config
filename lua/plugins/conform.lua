@@ -6,7 +6,7 @@ return {
       lua = { 'stylua' },
       -- css = { "prettier" },
       -- html = { "prettier" },
-      go = { 'gofmt', 'goimports', 'goimports-reviser' },
+      go = { 'gofmt', 'goimports' }, --, 'goimports-reviser' },
       -- go = { "gofmt", "goimports-reviser", "golines" },
       python = { 'black' },
     },
