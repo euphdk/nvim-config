@@ -103,6 +103,13 @@ vim.keymap.set('n', '<leader>gsj', '<cmd> GoTagAdd json <CR>', opts)
 vim.keymap.set('n', '<leader>gsy', '<cmd> GoTagAdd yaml <CR>', opts)
 vim.keymap.set('n', '<leader>gsm', '<cmd> GoTagAdd mapstructure <CR>', opts)
 
+-- Redirect change operations to the blackhole to avoid spoiling 'y' register content
+vim.keymap.set('n', 'c', '"_c', opts)
+vim.keymap.set('n', 'C', '"_C', opts)
+
+-- Markdown preview
+vim.keymap.set('n', '<leader>mp', '<cmd> MarkdownPreview <CR>', opts)
+
 -- Toggle diagnostics
 local diagnostics_active = true
 

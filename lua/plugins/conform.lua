@@ -1,30 +1,30 @@
 return {
-  "stevearc/conform.nvim",
-  event = "BufWritePre", -- uncomment for format on save
+  'stevearc/conform.nvim',
+  event = 'BufWritePre', -- uncomment for format on save
   opts = {
     formatters_by_ft = {
-      lua = { "stylua" },
+      lua = { 'stylua' },
       -- css = { "prettier" },
       -- html = { "prettier" },
-      go = { "gofmt" },
+      go = { 'gofmt', 'goimports' }, --, 'goimports-reviser' },
       -- go = { "gofmt", "goimports-reviser", "golines" },
-      python = { "black" },
+      python = { 'black' },
     },
 
     formatters = {
-      -- golang
-      -- ["goimports-reviser"] = {
-      --     prepend_args = { "-rm-unused" },
-      -- },
+      -- go
+      ['goimports-reviser'] = {
+        prepend_args = { '-rm-unused' },
+      },
       golines = {
-        prepend_args = { "--max-len=80" },
+        prepend_args = { '--max-len=80' },
       },
       -- Python
       black = {
         prepend_args = {
-          "--fast",
-          "--line-length",
-          "80",
+          '--fast',
+          '--line-length',
+          '80',
         },
       },
     },
