@@ -35,3 +35,11 @@ require('lazy').setup {
   require 'plugins.markdown-preview',
   require 'plugins.misc',
 }
+
+vim.filetype.add {
+  extension = {
+    jinja = 'jinja',
+    jinja2 = 'jinja',
+    j2 = 'jinja',
+  },
+}

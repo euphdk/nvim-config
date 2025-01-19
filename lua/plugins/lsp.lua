@@ -108,6 +108,9 @@ return { -- LSP Configuration & Plugins
     -- Enable the following language servers
     local servers = {
       html = { filetypes = { 'html', 'twig', 'hbs' } },
+      jinja_lsp = {
+        filetypes = { 'jinja', 'j2' },
+      },
       -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
       lua_ls = {
         -- cmd = {...},
