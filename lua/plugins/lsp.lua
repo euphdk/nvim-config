@@ -108,7 +108,9 @@ return { -- LSP Configuration & Plugins
     -- Enable the following language servers
     local servers = {
       html = { filetypes = { 'html', 'twig', 'hbs' } },
-      jinja_lsp = { filetypes = { 'j2' } },
+      jinja_lsp = {
+        filetypes = { 'jinja', 'j2' },
+      },
       -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
       lua_ls = {
         -- cmd = {...},
@@ -136,8 +138,8 @@ return { -- LSP Configuration & Plugins
           },
         },
       },
-      dockerls = {},
-      docker_compose_language_service = {},
+      -- dockerls = {},
+      -- docker_compose_language_service = {},
       pylsp = {
         settings = {
           pylsp = {
@@ -170,14 +172,14 @@ return { -- LSP Configuration & Plugins
       --     },
       --   },
       -- },
-      tailwindcss = {},
+      -- tailwindcss = {},
       jsonls = {},
-      sqlls = {},
+      -- sqlls = {},
       terraformls = {},
       yamlls = {},
-      bashls = {},
+      -- bashls = {},
       graphql = {},
-      cssls = {},
+      -- cssls = {},
       -- ltex = {},
       -- texlab = {},
       gopls = {
@@ -189,6 +191,7 @@ return { -- LSP Configuration & Plugins
             analyses = {
               unusedparams = true,
             },
+            gofumpt = true,
           },
         },
       },

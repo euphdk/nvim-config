@@ -28,10 +28,19 @@ require('lazy').setup {
   require 'plugins.telescope',
   require 'plugins.lsp',
   require 'plugins.autocompletion',
+  require 'plugins.blink',
   require 'plugins.conform',
   require 'plugins.gitsigns',
   require 'plugins.indent-blankline',
   require 'plugins.gopher',
   require 'plugins.markdown-preview',
   require 'plugins.misc',
+}
+
+vim.filetype.add {
+  extension = {
+    jinja = 'jinja',
+    jinja2 = 'jinja',
+    j2 = 'jinja',
+  },
 }
