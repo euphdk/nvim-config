@@ -43,3 +43,4 @@ vim.opt.formatoptions:remove { 'c', 'r', 'o' } -- don't insert the current comme
 vim.opt.runtimepath:remove '/usr/share/vim/vimfiles' -- separate vim plugins from neovim in case vim still in use
 vim.o.spell = false
 vim.g.go_recommended_style = 0
+vim.filetype.add { extension = { j2 = 'jinja' } }
