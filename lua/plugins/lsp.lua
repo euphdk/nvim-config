@@ -109,7 +109,7 @@ return { -- LSP Configuration & Plugins
     local servers = {
       html = { filetypes = { 'html', 'twig', 'hbs' } },
       jinja_lsp = {
-        filetypes = { 'jinja', 'j2' },
+        filetypes = { 'jinja', 'j2', 'ios' },
       },
       -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
       lua_ls = {
