@@ -35,6 +35,7 @@ require('lazy').setup {
   require 'plugins.gopher',
   require 'plugins.markdown-preview',
   require 'plugins.misc',
+  require 'plugins.supermaven',
 }
 
 vim.filetype.add {
